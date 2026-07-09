@@ -905,6 +905,316 @@ class="math inline">\(lpha\)</span>):</strong> 0.05</li>
 <p><em>A ‘Yes’ conclusion indicates statistical evidence to reject the
 null hypothesis that the means are equal.</em></p>
 </section>
+<section class="slide level1">
+
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="t-test-distribution-curve-2">T-Test Distribution Curve</h3>
+<ul>
+<li><strong>Comparison:</strong> Machine 1 vs. Machine 2</li>
+<li><strong>Condition:</strong> Pressure=100kPa, Temp=303K</li>
+<li><strong>Measurement:</strong> PartLength</li>
+<li><strong>Significance Level (<span
+class="math inline">\(lpha\)</span>):</strong> 0.05</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="media/plots/ttest_condition1_m1_vs_m2.png" /></p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+
+<h3 id="t-test-results-2">T-Test Results</h3>
+<ul>
+<li><strong>Comparison:</strong> Machine 1 vs. Machine 2</li>
+<li><strong>Condition:</strong> Pressure=100kPa, Temp=303K</li>
+<li><strong>Calculated t-statistic:</strong> <code>-2.917</code></li>
+<li><strong>P-value:</strong> <code>0.004</code></li>
+</ul>
+</section>
+<section class="slide level1">
+
+<h3 id="true-difference-assessment-2">True Difference Assessment</h3>
+<ul>
+<li><strong>Comparison:</strong> Machine 1 vs. Machine 2</li>
+<li><strong>Condition:</strong> Pressure=100kPa, Temp=303K</li>
+<li><strong>P-value:</strong> <code>0.004</code></li>
+<li><strong>Significance Level (<span
+class="math inline">\(lpha\)</span>):</strong> 0.05</li>
+<li><strong>Conclusion (Is there a true difference?):</strong>
+<code>Yes</code></li>
+</ul>
+<p><em>A ‘Yes’ conclusion indicates statistical evidence to reject the
+null hypothesis that the means are equal.</em></p>
+</section>
+<section class="slide level1">
+
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="t-test-distribution-curve-3">T-Test Distribution Curve</h3>
+<ul>
+<li><strong>Comparison:</strong> Machine 1 vs. Machine 2</li>
+<li><strong>Condition:</strong> Pressure=300kPa, Temp=373K</li>
+<li><strong>Measurement:</strong> PartLength</li>
+<li><strong>Significance Level (<span
+class="math inline">\(lpha\)</span>):</strong> 0.05</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="media/plots/ttest_condition2_m1_vs_m2.png" /></p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+
+<h3 id="t-test-results-3">T-Test Results</h3>
+<ul>
+<li><strong>Comparison:</strong> Machine 1 vs. Machine 2</li>
+<li><strong>Condition:</strong> Pressure=300kPa, Temp=373K</li>
+<li><strong>Calculated t-statistic:</strong> <code>18.962</code></li>
+<li><strong>P-value:</strong> <code>0.000</code></li>
+</ul>
+</section>
+<section class="slide level1">
+
+<h3 id="true-difference-assessment-3">True Difference Assessment</h3>
+<ul>
+<li><strong>Comparison:</strong> Machine 1 vs. Machine 2</li>
+<li><strong>Condition:</strong> Pressure=300kPa, Temp=373K</li>
+<li><strong>P-value:</strong> <code>0.000</code></li>
+<li><strong>Significance Level (<span
+class="math inline">\(lpha\)</span>):</strong> 0.05</li>
+<li><strong>Conclusion (Is there a true difference?):</strong>
+<code>Yes</code></li>
+</ul>
+<p><em>A ‘Yes’ conclusion indicates statistical evidence to reject the
+null hypothesis that the means are equal.</em></p>
+</section>
+<section class="slide level1">
+
+<h3 id="anova-table-pressure-effect">ANOVA Table: Pressure Effect</h3>
+<ul>
+<li><strong>Machine:</strong> 1</li>
+<li><strong>Measurement:</strong> PartResistance</li>
+<li><strong>Factor:</strong> Pressure (P)</li>
+<li><strong>Pr(&gt;F) Value:</strong> <code>0.000</code></li>
+<li><strong>Significance Level (<span
+class="math inline">\(lpha\)</span>):</strong> 0.05</li>
+<li><strong>Conclusion (Is this factor significant?):</strong>
+<code>Yes</code></li>
+</ul>
+</section>
+<section class="slide level1">
+
+<h3 id="anova-table-temperature-effect">ANOVA Table: Temperature
+Effect</h3>
+<ul>
+<li><strong>Machine:</strong> 1</li>
+<li><strong>Measurement:</strong> PartResistance</li>
+<li><strong>Factor:</strong> Temperature (T)</li>
+<li><strong>Pr(&gt;F) Value:</strong> <code>0.000</code></li>
+<li><strong>Significance Level (<span
+class="math inline">\(lpha\)</span>):</strong> 0.05</li>
+<li><strong>Conclusion (Is this factor significant?):</strong>
+<code>Yes</code></li>
+</ul>
+</section>
+<section class="slide level1">
+
+<h3 id="anova-table-pressuretemperature-pt-interaction-effect">ANOVA
+Table: Pressure<em>Temperature (P</em>T) Interaction Effect</h3>
+<ul>
+<li><strong>Machine:</strong> 1</li>
+<li><strong>Measurement:</strong> PartResistance</li>
+<li><strong>Factor:</strong> Pressure<em>Temperature (P</em>T)
+Interaction</li>
+<li><strong>Pr(&gt;F) Value:</strong> <code>0.000</code></li>
+<li><strong>Significance Level (<span
+class="math inline">\(lpha\)</span>):</strong> 0.05</li>
+<li><strong>Conclusion (Is this factor significant?):</strong>
+<code>Yes</code></li>
+</ul>
+</section>
+<section class="slide level1">
+
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="interaction-plot">Interaction Plot</h3>
+<ul>
+<li><strong>Comparison:</strong> Machine 1</li>
+<li><strong>Response Variable:</strong> PartResistance</li>
+<li><strong>Factors:</strong> Pressure vs. Temperature</li>
+<li><strong>Insight:</strong> Visualizes how the effect of one factor
+(Pressure) on Resistance changes across levels of another factor
+(Temperature).</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img
+data-src="media/plots/machine1_resistance_interaction_plot.png" /></p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="control-chart-machine-1-1">Control Chart: Machine 1</h3>
+<ul>
+<li><strong>Conditions:</strong> Pressure = 200kPa, Temp = 338K</li>
+<li><strong>Measurement:</strong> PartLength</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="media/plots/machine1_control_chart.png" /></p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="process-capability-machine-1-1">Process Capability: Machine
+1</h3>
+<ul>
+<li><strong>Conditions:</strong> Pressure = 200kPa, Temp = 338K</li>
+<li><strong>Measurement:</strong> PartLength</li>
+<li><strong>USL:</strong> 51.0, <strong>LSL:</strong> 49.0</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="media/plots/machine1_process_capability.png" /></p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+
+<h3 id="cpk-calculation-machine-1-1">Cpk Calculation: Machine 1</h3>
+<ul>
+<li><strong>Conditions:</strong> Pressure = 200kPa, Temp = 338K</li>
+<li><strong>Cpk Value:</strong> <code>0.11</code></li>
+</ul>
+<p><span class="math display">\[  ext{Cpk} = \min\left(rac{  ext{USL}
+-  ext{Mean}}{3 \cdot  ext{StdDev}}, rac{ ext{Mean} -     ext{LSL}}{3
+\cdot   ext{StdDev}}ight)\]</span></p>
+</section>
+<section class="slide level1">
+
+<h3 id="capability-assessment-machine-1-1">Capability Assessment:
+Machine 1</h3>
+<ul>
+<li><strong>Conditions:</strong> Pressure = 200kPa, Temp = 338K</li>
+<li><strong>Cpk:</strong> <code>0.11</code></li>
+<li><strong>Conclusion:</strong>
+<code>Not Capable (Cpk = 0.11 &lt; 1.33)</code></li>
+</ul>
+<p>A process is generally considered capable if Cpk <span
+class="math inline">\(\ge 1.33\)</span>.</p>
+</section>
+<section class="slide level1">
+
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="control-chart-machine-2-1">Control Chart: Machine 2</h3>
+<ul>
+<li><strong>Conditions:</strong> Pressure = 200kPa, Temp = 338K</li>
+<li><strong>Measurement:</strong> PartLength</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="media/plots/machine2_control_chart.png" /></p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="process-capability-machine-2-1">Process Capability: Machine
+2</h3>
+<ul>
+<li><strong>Conditions:</strong> Pressure = 200kPa, Temp = 338K</li>
+<li><strong>Measurement:</strong> PartLength</li>
+<li><strong>USL:</strong> 51.0, <strong>LSL:</strong> 49.0</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="media/plots/machine2_process_capability.png" /></p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+
+<h3 id="cpk-calculation-machine-2-1">Cpk Calculation: Machine 2</h3>
+<ul>
+<li><strong>Conditions:</strong> Pressure = 200kPa, Temp = 338K</li>
+<li><strong>Cpk Value:</strong> <code>-0.19</code></li>
+</ul>
+<p><span class="math display">\[  ext{Cpk} = \min\left(rac{  ext{USL}
+-  ext{Mean}}{3 \cdot  ext{StdDev}}, rac{ ext{Mean} -     ext{LSL}}{3
+\cdot   ext{StdDev}}ight)\]</span></p>
+</section>
+<section class="slide level1">
+
+<h3 id="capability-assessment-machine-2-1">Capability Assessment:
+Machine 2</h3>
+<ul>
+<li><strong>Conditions:</strong> Pressure = 200kPa, Temp = 338K</li>
+<li><strong>Cpk:</strong> <code>-0.19</code></li>
+<li><strong>Conclusion:</strong>
+<code>Not Capable (Cpk = -0.19 &lt; 1.33)</code></li>
+</ul>
+<p>A process is generally considered capable if Cpk <span
+class="math inline">\(\ge 1.33\)</span>.</p>
+</section>
+<section class="slide level1">
+
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="control-chart-machine-3-1">Control Chart: Machine 3</h3>
+<ul>
+<li><strong>Conditions:</strong> Pressure = 200kPa, Temp = 338K</li>
+<li><strong>Measurement:</strong> PartLength</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="media/plots/machine3_control_chart.png" /></p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="process-capability-machine-3-1">Process Capability: Machine
+3</h3>
+<ul>
+<li><strong>Conditions:</strong> Pressure = 200kPa, Temp = 338K</li>
+<li><strong>Measurement:</strong> PartLength</li>
+<li><strong>USL:</strong> 51.0, <strong>LSL:</strong> 49.0</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="media/plots/machine3_process_capability.png" /></p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+
+<h3 id="cpk-calculation-machine-3-1">Cpk Calculation: Machine 3</h3>
+<ul>
+<li><strong>Conditions:</strong> Pressure = 200kPa, Temp = 338K</li>
+<li><strong>Cpk Value:</strong> <code>0.22</code></li>
+</ul>
+<p><span class="math display">\[  ext{Cpk} = \min\left(rac{  ext{USL}
+-  ext{Mean}}{3 \cdot  ext{StdDev}}, rac{ ext{Mean} -     ext{LSL}}{3
+\cdot   ext{StdDev}}ight)\]</span></p>
+</section>
+<section class="slide level1">
+
+<h3 id="capability-assessment-machine-3-1">Capability Assessment:
+Machine 3</h3>
+<ul>
+<li><strong>Conditions:</strong> Pressure = 200kPa, Temp = 338K</li>
+<li><strong>Cpk:</strong> <code>0.22</code></li>
+<li><strong>Conclusion:</strong>
+<code>Not Capable (Cpk = 0.22 &lt; 1.33)</code></li>
+</ul>
+<p>A process is generally considered capable if Cpk <span
+class="math inline">\(\ge 1.33\)</span>.</p>
+</section>
 <section id="bibliography" class="slide level1">
 <h1>Bibliography</h1>
 <div id="refs" class="references csl-bib-body" role="list">
