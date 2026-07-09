@@ -280,5 +280,79 @@ A process is generally considered capable if Cpk $\ge 1.33$.
 
 
 ---
+
+:::: {.columns}
+::: {.column width="50%"}
+### T-Test Distribution Curve
+*   **Comparison:** Machine 1 vs. Machine 2
+*   **Condition:** Pressure=100kPa, Temp=303K
+*   **Measurement:** PartLength
+*   **Significance Level ($lpha$):** 0.05
+:::
+
+::: {.column width="50%"}
+![](media/plots/ttest_condition1_m1_vs_m2.png)
+:::
+
+::::
+
+---
+
+### T-Test Results
+*   **Comparison:** Machine 1 vs. Machine 2
+*   **Condition:** Pressure=100kPa, Temp=303K
+*   **Calculated t-statistic:** `-4.733`
+*   **P-value:** `0.000`
+
+
+---
+
+### True Difference Assessment
+*   **Comparison:** Machine 1 vs. Machine 2
+*   **Condition:** Pressure=100kPa, Temp=303K
+*   **P-value:** `0.000`
+*   **Significance Level ($lpha$):** 0.05
+*   **Conclusion (Is there a true difference?):** `Yes`
+
+*A 'Yes' conclusion indicates statistical evidence to reject the null hypothesis that the means are equal.*
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### T-Test Distribution Curve
+*   **Comparison:** Machine 1 vs. Machine 2
+*   **Condition:** Pressure=300kPa, Temp=373K
+*   **Measurement:** PartLength
+*   **Significance Level ($lpha$):** 0.05
+:::
+
+::: {.column width="50%"}
+![](media/plots/ttest_condition2_m1_vs_m2.png)
+:::
+
+::::
+
+---
+
+### T-Test Results
+*   **Comparison:** Machine 1 vs. Machine 2
+*   **Condition:** Pressure=300kPa, Temp=373K
+*   **Calculated t-statistic:** `19.047`
+*   **P-value:** `0.000`
+
+
+---
+
+### True Difference Assessment
+*   **Comparison:** Machine 1 vs. Machine 2
+*   **Condition:** Pressure=300kPa, Temp=373K
+*   **P-value:** `0.000`
+*   **Significance Level ($lpha$):** 0.05
+*   **Conclusion (Is there a true difference?):** `Yes`
+
+*A 'Yes' conclusion indicates statistical evidence to reject the null hypothesis that the means are equal.*
+
+---
 # Bibliography
 <div id="refs"></div>
