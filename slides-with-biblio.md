@@ -628,5 +628,279 @@ A process is generally considered capable if Cpk $\ge 1.33$.
 
 
 ---
+
+:::: {.columns}
+::: {.column width="50%"}
+### T-Test Distribution Curve
+*   **Comparison:** Machine 1 vs. Machine 2
+*   **Condition:** Pressure=100kPa, Temp=303K
+*   **Measurement:** PartLength
+*   **Significance Level ($lpha$):** 0.05
+:::
+
+::: {.column width="50%"}
+![](media/plots/ttest_condition1_m1_vs_m2.png)
+:::
+
+::::
+
+---
+
+### T-Test Results
+*   **Comparison:** Machine 1 vs. Machine 2
+*   **Condition:** Pressure=100kPa, Temp=303K
+*   **Calculated t-statistic:** `-4.561`
+*   **P-value:** `0.000`
+
+
+---
+
+### True Difference Assessment
+*   **Comparison:** Machine 1 vs. Machine 2
+*   **Condition:** Pressure=100kPa, Temp=303K
+*   **P-value:** `0.000`
+*   **Significance Level ($lpha$):** 0.05
+*   **Conclusion (Is there a true difference?):** `Yes`
+
+*A 'Yes' conclusion indicates statistical evidence to reject the null hypothesis that the means are equal.*
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### T-Test Distribution Curve
+*   **Comparison:** Machine 1 vs. Machine 2
+*   **Condition:** Pressure=300kPa, Temp=373K
+*   **Measurement:** PartLength
+*   **Significance Level ($lpha$):** 0.05
+:::
+
+::: {.column width="50%"}
+![](media/plots/ttest_condition2_m1_vs_m2.png)
+:::
+
+::::
+
+---
+
+### T-Test Results
+*   **Comparison:** Machine 1 vs. Machine 2
+*   **Condition:** Pressure=300kPa, Temp=373K
+*   **Calculated t-statistic:** `17.517`
+*   **P-value:** `0.000`
+
+
+---
+
+### True Difference Assessment
+*   **Comparison:** Machine 1 vs. Machine 2
+*   **Condition:** Pressure=300kPa, Temp=373K
+*   **P-value:** `0.000`
+*   **Significance Level ($lpha$):** 0.05
+*   **Conclusion (Is there a true difference?):** `Yes`
+
+*A 'Yes' conclusion indicates statistical evidence to reject the null hypothesis that the means are equal.*
+
+---
+
+### ANOVA Table: Pressure Effect
+*   **Machine:** 1
+*   **Measurement:** PartResistance
+*   **Factor:** Pressure (P)
+*   **Pr(>F) Value:** `0.000`
+*   **Significance Level ($lpha$):** 0.05
+*   **Conclusion (Is this factor significant?):** `Yes`
+
+
+---
+
+### ANOVA Table: Temperature Effect
+*   **Machine:** 1
+*   **Measurement:** PartResistance
+*   **Factor:** Temperature (T)
+*   **Pr(>F) Value:** `0.000`
+*   **Significance Level ($lpha$):** 0.05
+*   **Conclusion (Is this factor significant?):** `Yes`
+
+
+---
+
+### ANOVA Table: Pressure*Temperature (P*T) Interaction Effect
+*   **Machine:** 1
+*   **Measurement:** PartResistance
+*   **Factor:** Pressure*Temperature (P*T) Interaction
+*   **Pr(>F) Value:** `0.000`
+*   **Significance Level ($lpha$):** 0.05
+*   **Conclusion (Is this factor significant?):** `Yes`
+
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Interaction Plot
+*   **Comparison:** Machine 1
+*   **Response Variable:** PartResistance
+*   **Factors:** Pressure vs. Temperature
+*   **Insight:** Visualizes how the effect of one factor (Pressure) on Resistance changes across levels of another factor (Temperature).
+:::
+
+::: {.column width="50%"}
+![](media/plots/machine1_resistance_interaction_plot.png)
+:::
+
+::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Control Chart: Machine 1
+*   **Conditions:** Pressure = 200kPa, Temp = 338K
+*   **Measurement:** PartLength
+:::
+
+::: {.column width="50%"}
+![](media/plots/machine1_control_chart.png)
+:::
+
+::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Process Capability: Machine 1
+*   **Conditions:** Pressure = 200kPa, Temp = 338K
+*   **Measurement:** PartLength
+*   **USL:** 51.0, **LSL:** 49.0
+:::
+
+::: {.column width="50%"}
+![](media/plots/machine1_process_capability.png)
+:::
+
+::::
+
+---
+
+### Cpk Calculation: Machine 1
+*   **Conditions:** Pressure = 200kPa, Temp = 338K
+*   **Cpk Value:** `0.11`
+
+$$	ext{Cpk} = \min\left(rac{	ext{USL} - 	ext{Mean}}{3 \cdot 	ext{StdDev}}, rac{	ext{Mean} - 	ext{LSL}}{3 \cdot 	ext{StdDev}}ight)$$
+
+
+---
+
+### Capability Assessment: Machine 1
+*   **Conditions:** Pressure = 200kPa, Temp = 338K
+*   **Cpk:** `0.11`
+*   **Conclusion:** `Not Capable (Cpk = 0.11 < 1.33)`
+
+A process is generally considered capable if Cpk $\ge 1.33$.
+
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Control Chart: Machine 2
+*   **Conditions:** Pressure = 200kPa, Temp = 338K
+*   **Measurement:** PartLength
+:::
+
+::: {.column width="50%"}
+![](media/plots/machine2_control_chart.png)
+:::
+
+::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Process Capability: Machine 2
+*   **Conditions:** Pressure = 200kPa, Temp = 338K
+*   **Measurement:** PartLength
+*   **USL:** 51.0, **LSL:** 49.0
+:::
+
+::: {.column width="50%"}
+![](media/plots/machine2_process_capability.png)
+:::
+
+::::
+
+---
+
+### Cpk Calculation: Machine 2
+*   **Conditions:** Pressure = 200kPa, Temp = 338K
+*   **Cpk Value:** `-0.19`
+
+$$	ext{Cpk} = \min\left(rac{	ext{USL} - 	ext{Mean}}{3 \cdot 	ext{StdDev}}, rac{	ext{Mean} - 	ext{LSL}}{3 \cdot 	ext{StdDev}}ight)$$
+
+
+---
+
+### Capability Assessment: Machine 2
+*   **Conditions:** Pressure = 200kPa, Temp = 338K
+*   **Cpk:** `-0.19`
+*   **Conclusion:** `Not Capable (Cpk = -0.19 < 1.33)`
+
+A process is generally considered capable if Cpk $\ge 1.33$.
+
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Control Chart: Machine 3
+*   **Conditions:** Pressure = 200kPa, Temp = 338K
+*   **Measurement:** PartLength
+:::
+
+::: {.column width="50%"}
+![](media/plots/machine3_control_chart.png)
+:::
+
+::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Process Capability: Machine 3
+*   **Conditions:** Pressure = 200kPa, Temp = 338K
+*   **Measurement:** PartLength
+*   **USL:** 51.0, **LSL:** 49.0
+:::
+
+::: {.column width="50%"}
+![](media/plots/machine3_process_capability.png)
+:::
+
+::::
+
+---
+
+### Cpk Calculation: Machine 3
+*   **Conditions:** Pressure = 200kPa, Temp = 338K
+*   **Cpk Value:** `0.22`
+
+$$	ext{Cpk} = \min\left(rac{	ext{USL} - 	ext{Mean}}{3 \cdot 	ext{StdDev}}, rac{	ext{Mean} - 	ext{LSL}}{3 \cdot 	ext{StdDev}}ight)$$
+
+
+---
+
+### Capability Assessment: Machine 3
+*   **Conditions:** Pressure = 200kPa, Temp = 338K
+*   **Cpk:** `0.22`
+*   **Conclusion:** `Not Capable (Cpk = 0.22 < 1.33)`
+
+A process is generally considered capable if Cpk $\ge 1.33$.
+
+
+---
 # Bibliography
 <div id="refs"></div>
